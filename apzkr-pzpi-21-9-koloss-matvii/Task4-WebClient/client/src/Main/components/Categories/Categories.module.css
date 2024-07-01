@@ -1,0 +1,80 @@
+@import url("../../styles/var.css");
+
+.wrapper {
+  display: inline-block;
+  overflow: hidden;
+  border-radius: 5px;
+  max-width: 300px;
+}
+
+.content {
+}
+
+.header {
+  background: var(--dark-gr-color);
+  padding: 10px;
+}
+
+.header > h2 {
+  font-size: 14px;
+}
+
+.items {
+  background: var(--light-gray-color);
+}
+
+.item {
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.item.active {
+  font-weight: 600;
+}
+
+.arrow{
+    width: 0;
+	height: 0;
+	border-left: 5px solid transparent;
+	border-right: 5px solid transparent;
+	border-top: 5px solid black;
+    transition: all 0.1s ease;
+}
+
+.arrow.active {
+	border-bottom: 5px solid black;
+	border-top: none; 
+    transition: all 0.1s ease;
+}
+
+.childrenItems {
+  height: 0;
+  overflow: hidden;
+}
+
+.visible {
+  height: auto;
+}
+
+.childrenItem {
+  padding-left: 20px;
+}
+
+.item a {
+  color: black;
+}
+
+.item a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 850px) {
+  .wrapper {
+    display: block;
+    width: 100%;
+    max-width: none;
+  }
+}

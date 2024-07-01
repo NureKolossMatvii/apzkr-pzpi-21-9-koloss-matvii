@@ -1,0 +1,11 @@
+.form {
+    min-width: 500px;
+}
+
+.imageLoader {
+    padding: 20px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}

@@ -1,0 +1,39 @@
+.content {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.block {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.description {
+    font-size: 16px;
+}
+
+.description > span::before{
+    content: '-';
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.notFound {
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.notFoundTitle {
+    font-size: 75px;
+    font-weight: 600;
+}
+
+.notFoundDescription {
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+}

@@ -1,0 +1,21 @@
+.content {
+
+}
+
+.items {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.item {
+    background: rgb(245,245,245);
+    width: 30px;
+    height: 30px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    user-select: none;
+}

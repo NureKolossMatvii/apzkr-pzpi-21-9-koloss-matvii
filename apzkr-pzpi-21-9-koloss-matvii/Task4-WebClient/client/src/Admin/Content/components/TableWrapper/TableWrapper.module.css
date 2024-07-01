@@ -1,0 +1,51 @@
+.container {
+    background: white;
+}
+
+.container table {
+    width:100%;
+    border:1px none #b3adad;
+    border-collapse:collapse;
+    padding:10px;
+}
+.container table th {
+    border:1px none #b3adad;
+    padding:10px;
+    background: #f5f5f5;
+    color: #313030;
+}
+.container table td {
+    border:1px none #b3adad;
+    text-align: center;
+    padding:10px;
+    background: #ffffff;
+    color: #313030;
+}
+
+.controlls {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.controlls.flDirCol {
+    flex-direction: column;
+}
+
+.image {
+    width: 100px;
+    height: 100px;
+    border-radius: 5px;
+    overflow: hidden;
+    position: relative;
+    background: rgb(245,245,245);
+}
+
+.image img {
+    object-fit: contain;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}

@@ -1,0 +1,28 @@
+.listItem {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+
+.image {
+    width: 40px;
+    height: 40px;
+    position: relative;
+}
+
+.image img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.imageName {
+    max-width: 200px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    
+}

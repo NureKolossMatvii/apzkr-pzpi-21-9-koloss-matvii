@@ -1,0 +1,171 @@
+@import url("../../../styles/var.css");
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.container {
+    width: 100%;
+    padding-top: 100%;
+    position: relative;
+    overflow: hidden;
+    background: var(--dark-gr-color);
+    z-index: 1;
+}
+
+.sliderWrapper {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    transition: transform 0.3s;
+}
+
+.slide {
+    flex-shrink: 0;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.slide img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    object-fit: contain;
+}
+
+.container:hover .button{
+    opacity: 1;
+}
+
+.button {
+    opacity: 0;
+    width: 30px;
+    height: 60px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    z-index: 2;
+    background: rgba(0, 0, 0, 0.03);
+}
+
+.button.prev {
+    left: 0;
+}
+
+.button.next {
+    right: 0;
+}
+
+.button.prev {
+    border-radius: 0 5px 5px 0;
+}
+
+.button.next {
+    border-radius: 5px 0 0 5px;
+}
+
+.button::after, .button::before{
+    position: absolute;
+    content: '';
+    display: inline-block;
+    height: 4px;
+    width: 100%;
+    background: black;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 5px;
+}
+
+.button.prev::before, .button.prev::after,
+.button.next::before, .button.next::after {
+    top: 50%;
+}
+
+.button.prev::before, .button.prev::after {
+    left: -40%;
+}
+
+.button.next::before, .button.next::after {
+    left: 40%;
+}
+
+.button.prev::before {
+    transform: rotate(-45deg) translateX(50%);
+}
+
+.button.prev::after {
+    transform: rotate(45deg) translateX(50%);
+}
+
+.button.next::before {
+    transform: rotate(-135deg) translateX(50%);
+}
+
+.button.next::after {
+    transform: rotate(135deg) translateX(50%);
+}
+
+.items {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    width: 100%;
+    justify-content: center;
+    max-height: 200px;
+    overflow-y: auto;
+}
+
+.item {
+    width: 100px;
+    height: 100px;
+    position: relative;
+    background: var(--dark-gr-color);
+    cursor: zoom-in;
+}
+
+.item.active {
+    border: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+.item img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.dots {
+    position: absolute;
+    bottom: 5%;
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    z-index: 2;
+    opacity: .5;
+}
+
+.dot {
+    width: 7.5px;
+    height: 7.5px;
+    border-radius: 50%;
+    background: black;
+    border: 1px solid white;
+}
+
+.dot.active {
+    background: white;
+    border: 1px solid black;
+}
+

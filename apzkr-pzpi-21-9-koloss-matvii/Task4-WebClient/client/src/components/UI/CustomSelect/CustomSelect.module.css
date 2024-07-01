@@ -1,0 +1,11 @@
+.content {
+    width: 100%;
+}
+
+.content label {
+    font-size: 16px;
+}
+
+.select {
+    margin-top: 5px;
+}

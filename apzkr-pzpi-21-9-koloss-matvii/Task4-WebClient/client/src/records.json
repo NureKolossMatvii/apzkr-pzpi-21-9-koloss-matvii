@@ -1,0 +1,16 @@
+{
+    "contacts": [
+        {
+            "text": "m9tvey",
+            "icon": "assets/images/instagram_icon.png",
+            "link": "https://www.instagram.com/m9tvey/"
+        }
+    ],
+    "logotype": "assets/images/logotype.png",
+    "logotypeLite": "assets/images/logotype_lite.png",
+    "siteTitle": "Antique-group - Антикваріат. Вінтаж. Срібло. Порцеляна",
+    "siteDescription": "Уникальные антикварные находки: серебряные изделия, вазы, украшения и многое другое. Откройте мир старины в нашем каталоге.",
+    "statusCodes": {
+        "notFound": 404
+    }
+}
